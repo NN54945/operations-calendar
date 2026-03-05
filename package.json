@@ -1,1 +1,1 @@
-{ "name": "operations-calendar", "version": "1.0.0", "dependencies": { "react": "^18.0.0", "react-dom": "^18.0.0", "@reduxjs/toolkit": "^1.6.0", "react-redux": "^8.0.0", "tailwindcss": "^2.1.0", "vite": "^2.5.0" } }
+{"name": "operations-calendar", "version": "1.0.0", "homepage": "https://NN54945.github.io/operations-calendar/", "scripts": {"deploy": "your_deploy_command_here"}}
