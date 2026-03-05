@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/operations-calendar/', // Base path for GitHub Pages deployment
-  // other configurations
+  plugins: [react()],
+  base: '/operations-calendar/',
 });
