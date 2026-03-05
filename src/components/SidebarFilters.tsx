@@ -1,0 +1,1 @@
+// src/components/SidebarFilters.tsx content goes here

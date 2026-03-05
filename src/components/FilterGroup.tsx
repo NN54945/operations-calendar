@@ -1,0 +1,1 @@
+// src/components/FilterGroup.tsx content goes here

@@ -1,0 +1,1 @@
+// src/hooks/useCalendar.ts content goes here

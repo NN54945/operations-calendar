@@ -1,0 +1,1 @@
+// src/store/slices/uiSlice.ts content goes here

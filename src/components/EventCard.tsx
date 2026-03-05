@@ -1,0 +1,1 @@
+// src/components/EventCard.tsx content goes here
