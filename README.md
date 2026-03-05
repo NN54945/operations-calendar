@@ -49,11 +49,24 @@ npm run dev
 npm run build
 ```
 
+## 自定义域名（可选）
+
+无需在代码中写死域名。如需绑定自定义域名，只需在 GitHub 仓库设置中添加一个 **Repository variable**：
+
+1. 打开仓库页面 → **Settings** → **Secrets and variables** → **Actions** → **Variables** 选项卡
+2. 点击 **New repository variable**，名称填 `CUSTOM_DOMAIN`，值填你的域名（如 `example.com`）
+3. 保存后，下次 Actions 部署时会自动在 `dist/` 目录生成 `CNAME` 文件
+
+如果不设置该变量，部署时不会生成 `CNAME`，使用默认的 `<用户名>.github.io/<仓库名>` 地址即可。
+
+---
+
 ## 部署原理
 
 推送到 `main` 分支后，`.github/workflows/deploy.yml` 中的 GitHub Actions 工作流会自动：
 
 1. 安装依赖
 2. 运行 `npm run build` 生成静态文件
-3. 将 `dist/` 目录发布到 GitHub Pages
+3. 若仓库变量 `CUSTOM_DOMAIN` 已设置，则在 `dist/` 目录生成 `CNAME` 文件
+4. 将 `dist/` 目录发布到 GitHub Pages
 
