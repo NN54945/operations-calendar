@@ -1,7 +1,7 @@
 {
   "name": "operations-calendar",
   "version": "1.0.0",
-  "homepage": "https://NN54945.github.io/operations-calendar/",
+  "homepage": "https://calendar.zhushenglin.cn/",
   "type": "module",
   "scripts": {
     "dev": "vite",
